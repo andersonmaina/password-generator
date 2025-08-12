@@ -6,7 +6,7 @@
 
 void generate_combination(int num_chars_per_group, int num_groups, FILE* file) {
     int i, j;
-    char characters[NUM_CHARS] = "majoris24!!MAJORIS";
+    char characters[NUM_CHARS] = "ABCDEFGHIJKLMNIOPQRSTVWXYZ1234567890!@#$";
     for (i = 0; i < num_groups; i++) {
         for (j = 0; j < num_chars_per_group; j++) {
             fprintf(file, "%c", characters[rand() % NUM_CHARS]);
@@ -48,4 +48,5 @@ int main()
 
     fclose(file);
 }
+
 
